@@ -10,4 +10,7 @@ root.render(
   </React.StrictMode>
 );
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b4b077ce6b95d1536a36d6e493b25017dfdcd22c
