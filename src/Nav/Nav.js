@@ -2,9 +2,16 @@ import React from "react";
 import './nav.css';
 import navIcon from './nav-icon.jpg';
 import navSearch from './search_icon.jpg';
-function Nav(){
-    
+import { Link } from "react-router-dom";
+// import {Routes, Route,Link} from "react-router-dom";
 
+function Nav(){
+    function handleClick1(){
+      window.location.href = "/login";
+    }
+    function handleClick2(){
+      window.location.href = "/signup";
+    }
     return(
        <div className="main-nav">
         <div className="menu">
@@ -23,8 +30,11 @@ function Nav(){
         </div>
         <div className="nav-search"><img src={navSearch}></img></div>
         <div className="login_signin">
-          <button>Login</button>
-          <button>Sign up</button>
+        
+        <button onClick={handleClick1}>Login</button>
+      
+          <button onClick={handleClick2}>Sign up</button>
+         
 
         </div>
         </div>
@@ -32,6 +42,11 @@ function Nav(){
             <h4>Sarath Music's</h4>
             <button>Try 1 month free*</button>
         </div>
+       
+       {/* <Routes>
+            <Route path="/login" element={<Login />} />
+          </Routes> */}
+      
        </div>
   );
 

@@ -1,24 +1,30 @@
-<<<<<<< HEAD
 
-
-function App() {
-  return (
-    <div>
-      <h1>hello</h1>
-    </div>
-  )
-=======
 import Nav from "./Nav/Nav";
 import Home from "./Home/home";
 
+import React from "react";
+import { Route,Routes,Link } from "react-router-dom";
+import Music from "./musicpage/music";
 function App() {
   return (
     <>
+
     <Nav/>
     <Home/>
+    {/* <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+    </Routes>
+    <Music/>
+    <Login/> 
+   <Signup/>
+    */}
+    
+   
+   
     </>
   );
->>>>>>> b4b077ce6b95d1536a36d6e493b25017dfdcd22c
+
 }
 
 export default App;
