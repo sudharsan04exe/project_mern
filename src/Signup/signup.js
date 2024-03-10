@@ -2,7 +2,7 @@ import React from "react";
 import './signup.css';
 
 
-export default function Login() {
+export default function Sign() {
   return (
     <div className="login-main">
         <div className="heading"><p><center>Are you a new user?</center></p></div>

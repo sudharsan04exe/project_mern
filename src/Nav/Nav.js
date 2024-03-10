@@ -18,7 +18,7 @@ function Nav(){
         <div className="nav-icon"><img src={navIcon} alt></img></div>
         
         <div className="menuitem">
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           <a href="#">About</a>
           <a href="#">Support</a>
           <a href="#">Store</a>
