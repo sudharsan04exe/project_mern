@@ -11,11 +11,7 @@ import Music from "./musicpage/music";
 function App() {
   return (
     <>
-
-   
-
-
-    <Home/>
+    <Nav/>
     <Routes>
         <Route path="/" element={
                               <Home />} />
