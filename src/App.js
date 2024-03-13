@@ -11,19 +11,16 @@ import Music from "./musicpage/music";
 function App() {
   return (
     <>
-<Nav/> 
+    <Music />
+{/* <Nav/> 
 <Routes>
         <Route path="/" element={
                               <Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Sign />} />
-      </Routes>
-    
-   
-   
+      </Routes> */}
     </>
   );
-
 }
 
 export default App;
