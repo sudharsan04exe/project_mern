@@ -11,20 +11,12 @@ import Music from "./musicpage/music";
 function App() {
   return (
     <>
-<<<<<<< HEAD
+
     <Nav/>
     <Home/>
-    
-=======
-    <Music />
-{/* <Nav/> 
-<Routes>
-        <Route path="/" element={
-                              <Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Sign />} />
-      </Routes> */}
->>>>>>> 8636eb4704edfe4d0a321cee0489b0a2f171d870
+   
+
+
     </>
   );
 }
