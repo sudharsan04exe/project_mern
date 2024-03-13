@@ -1,36 +1,164 @@
 body{
     margin: 0;
     padding: 0;
+
 }
-.home-para{
+.home-main{
+    height: 800px;
+}
+.home-para{ 
     display: flex;
     justify-content: center;
     padding-left: 40px;
+    margin-top: 130px;
     background-color: rgb(245 245 247);
 }
-.home-main .home-main-img img{
-    width: 150px;
-    padding-left: 670px;
-    padding-top: 80px;
+/* Add transition for smooth movement */
+.home-main .home-main-img img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    transition: width 2s ease-in-out, height 2s ease-in-out, transform 2s ease-in-out; 
 }
-.home-main .home-main-img p{
-    /* font-weight: 800; */
+
+/* Apply initial transformation */
+.initial-load .home-main-img img {
+    transform: translateY(10%);
+    transform: translateX(-17px);
+    width:150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Ensure the image is displayed as a block element and center horizontally */
+.home-main .home-main-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Center the text */
+.home-main .home-main-img p {
     font-size: 25px;
-    padding-left: 675px;
-    /* padding-top: -50px; */
-    transform: translateY(-30px);
-     transition: opacity 500ms ease-out;
+    text-align: center;
+    transform: translateY(150px) translateX(-10px); /* Adjust as needed */
+    position: relative; /* Ensure relative positioning */
+    top: -160px; /* Adjust as needed */
 }
+
+
 .home-center-content{
     font-size: 50px;
     letter-spacing: -0.0009em;
     font-weight: 700;
     padding-left: 420px;
-    transform: translateY(-70px);
+    transform: translateY(-54px);
 
 }
-
-:not(svg){
-    transform-origin: 0px 0px;
+.home-center-content h2{
+    padding-left: 25px;
+    margin-top: 25px;
 }
 
+/* home.css *//* home.css */
+.home-below {
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+    margin-top: 120px; /* Adjust the margin-top as needed */
+    /* overflow-x: hidden; Hide horizontal overflow */
+    gap: 110px;
+    transform: translateY(-100px);
+}
+
+.home-below img {
+    width: 280px;
+    height: 582px;
+    transform: translateY(-50px); /* Adjust as needed */
+    margin-top: -20px; /* Adjust the margin to move the image slightly above */
+}
+
+
+
+.home-below-phone-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Adjust the gap between images */
+    justify-content: center;
+    /* overflow-x: hidden; Hide horizontal overflow */
+}
+
+.home-below-phone-image img {
+    width: 253px;
+    height: 555px;
+    transform: translateY(-480px);
+    border-radius: 35px;
+   
+}
+
+
+.home-below-phone-image .img1 {
+    transform: translateY(-283px) translateX(-95px);
+}
+
+.home-below-phone-image .img2 {
+    transform: translateY(-283px) translateX(-7px);
+}
+
+.home-below-phone-image .img3 {
+    transform: translateY(-283px) translateX(79.5px);
+}
+
+.home-below-phone-image .img4 {
+    transform: translateY(-283px) translateX(166.5px);
+}
+
+
+.home-below-phone-image .img1,
+.home-below-phone-image .img3,
+.home-below-phone-image .img5,
+.home-below .img1{
+    /* transform: translateY(50px); */
+    padding-top: 40px;
+}
+
+
+
+.btn{display: flex;justify-content: center;}
+.btn button{
+    text-align: center;
+    height: 45px;
+    font-weight: 500;
+    width: 175px;
+    font-size: 18px;
+    border-radius: 890px;
+    border: none;
+    background-color: #fa243c;
+    color: white;
+    transform: translateY(-100px);
+   margin-right: 22px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 200px; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.bottom h1{
+   margin-left: 100px;
+   padding-top: -500px;
+   transform: translateY(-500px);
+   font-size: 42px;
+}
+.bottom h1 span{
+    color: #fa243c;
+    
+}

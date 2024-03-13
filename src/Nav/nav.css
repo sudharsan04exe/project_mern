@@ -1,103 +1,85 @@
-body{
-    margin:0;
-    padding:0;
+/* nav.css */
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px; /* Add padding to accommodate fixed navbar */
 }
-.menu{
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000; /* Ensure the navbar stays on top of other elements */
+}
+
+.menu {
     display: flex;
     justify-content: space-between;
-    width:100%;
+    align-items: center;
     height: 70px;
-    /* border-bottom: 1px solid black; */
-    /* border: 2px solid black; */
 }
-.nav-icon{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    margin-left: 30px ;
-    /* transform: translateX(); */
-    color: black;
-    /* width: fit-content; */
-}
-/* .nexcent img{
-    margin-top: 3px;
-    margin-left: -10px;
-} */
 
-.main-nav .menu .nav-icon img{
-       width: 42px;
-       padding: 80px;
-       padding-left:80px ;
-       /* height: 30px; */
+.nav-icon img {
+    width: 42px;
+    padding-left: 80px;
 }
-.menuitem{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   margin-left: -50px;
-    /* margin-left: 350px; */
-    gap:20px;
-    /* padding-right: 80px;    */
-}
-.login_signin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin-left: 350px; */
-    gap: 10px;
-    margin-right: 50px;
-    /* justify-content: flex-end; */
-}
-.menuitem a{
-    /* display: flex; */
-    /* justify-content: space-between; */
 
+.menuitem {
+    display: flex;
+    gap: 40px;
+    margin-left: 120px;
+}
+
+.menuitem a {
     text-decoration: none;
     color: black;
-    margin-left: 38px;
+}
 
-}
-.menu .nav-search img{
+.menu .nav-search img {
     width: 30px;
-   padding-top: 22px;
-   
-   /* margin-top: 20px; */
+    padding-top: 13px;
 }
-.menuitem a:hover{
-       color:#fa243c;
+
+.menuitem a:hover {
+    color: #fa243c;
 }
-.login_signin button{
-   
-      width: 80px;
-      height: 35px;
-      border-radius:890px;
-      border-style:none ;
-      background-color: #fa243c;
-      border: #fa243c;
-      color:white;
+
+.login_signin button {
+    width: 80px;
+    height: 35px;
+    border-radius: 890px;
+    border-style: none;
+    background-color: #fa243c;
+    border: #fa243c;
+    color: white;
+    margin-right: 10px;
 }
-.login_signin button:hover{
+
+.login_signin button:hover {
     box-shadow: 0 0 5px #fa243c;
 }
 
-.below-nav{
+.below-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.below-nav h4{
-   font-size: 17px;
-   transform: translateX(-120px);
-   
+
+.below-nav h4 {
+    font-size: 17px;
+    transform: translateX(-120px);
 }
-.below-nav button{
+
+.below-nav button {
     width: 150px;
-    height: 25px;
-  margin-right: -20px;
-  background-color: #fa243c;
-  border: none;
-  color: white;
-  border-radius: 890px;
+    height: 28px;
+    margin-right: -20px;
+    background-color: #fa243c;
+    border: none;
+    color: white;
+    border-radius: 890px;
 }
