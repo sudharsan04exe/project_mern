@@ -7,7 +7,7 @@ export default function Home(){
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
-        setLoaded(true); // Set loaded to true after component is mounted
+        setLoaded(true); 
     }, []);
 
     return(
